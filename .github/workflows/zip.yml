@@ -28,7 +28,6 @@ jobs:
       - name: Zip output
         run: zip -r -X DeepPhe-unix-scripts.zip start-neo4j.command start-viz.command
         working-directory: osx
-        dest: zips
 
       - name: Upload Release Asset
         id: upload-resources
@@ -37,7 +36,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: zips/DeepPhe-unix-scripts.zip
+          file: DeepPhe-unix-scripts.zip
           asset_name: Deepphe-unix-scripts.zip
           tag: 'refs/heads/main'
           overwrite: true
