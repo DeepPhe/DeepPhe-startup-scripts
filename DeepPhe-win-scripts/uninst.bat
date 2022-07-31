@@ -1,2 +1,2 @@
-install_dir\uninstall.exe
+start /b install_dir\uninstall.exe
 
