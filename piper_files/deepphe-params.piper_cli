@@ -1,0 +1,15 @@
+// InputDirectory
+-i=_installer_input_dir
+
+// OutputDirectory
+-o=_installer_output_dir
+
+// Neo4jUri
+-r=bolt://127.0.0.1:7687
+
+// Neo4jUser
+-user=neo4j
+
+// Neo4jPass
+-pass=neo4jpass
+
