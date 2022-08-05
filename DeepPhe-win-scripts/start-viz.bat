@@ -33,6 +33,9 @@ set PORT=3001
 ECHO .
 ECHO Updating the DeepPhe-Viz to Neo4j Connection External Application Components.
 ECHO Some components may take a long time to update.  Please be patient.
+ECHO .
+ECHO If this is your first time running DeepPhe-Viz, it may appear as if the update is stalling.
+ECHO Please be patient as it will resume.
 ECHO.
 PAUSE
 cd api
