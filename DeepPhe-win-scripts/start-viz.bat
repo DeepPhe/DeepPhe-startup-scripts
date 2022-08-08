@@ -67,6 +67,7 @@ ECHO Starting the DeepPhe-Viz Client ...
 ECHO.
 
 cd ../client
+set HOST=127.0.0.1
 set PORT=3000
 TITLE "DeepPhe-Viz Client"
 npm start
