@@ -1,6 +1,6 @@
 @ECHO OFF
 TITLE StartViz
-
+REM _installer_java_home_dir
 for /f "tokens=1,3" %%A in ('type viz.cfg') do call :SetParam %%A %%B
 goto :StartVizServer
 
