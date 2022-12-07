@@ -1,3 +1,13 @@
 @echo off
 title StopViz
-wmic Path win32_process Where "CommandLine Like '%dphe-viz-launcher-1.0-jar-with-dependencies.jar%'" Call Terminate
+
+wmic process where caption="DeepPheVizApi.exe" get processid > cmdexelist.txt
+wmic process where caption="DeepPheVizClient.exe" get processid >> cmdexelist.txt
+
+for /f "tokens=*" %%P in ('type cmdexelist.txt') do call :DoKill %%P
+goto :eof
+
+:DoKill
+set killer=%*
+taskkill /f /t /pid %*
+goto :eof
